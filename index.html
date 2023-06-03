@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>틀린그림찾기 게임</title>
+    <style>
+        /* 이미지 컨테이너 스타일링 */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+        }
+        /* 이미지 스타일링 */
+        .game-image {
+            max-width: 100%;
+            max-height: 100%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>틀린그림찾기 게임</h1>
+    <div class="image-container">
+        <img class="game-image" src="image1.jpg" alt="Image 1" onclick="checkIncorrect(this)">
+    </div>
+    <div class="image-container">
+        <img class="game-image" src="image2.jpg" alt="Image 2" onclick="checkIncorrect(this)">
+    </div>
+
+    <script>
+        // 클릭한 이미지를 체크하는 함수
+        function checkIncorrect(image) {
+            // 이미지를 클릭하면 틀린 곳으로 마킹
+            image.style.border = "3px solid red";
+            // 틀린 곳을 체크하는 로직 추가
+            // ...
+        }
+    </script>
+</body>
+</html>
